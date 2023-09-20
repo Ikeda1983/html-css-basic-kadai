@@ -1,0 +1,35 @@
+html {
+  font-size: 20px;
+}
+
+#first-heading {
+  text-align: center;
+  text-shadow: 5px 5px 7px gray;
+  letter-spacing: 1.2em; 
+  font-family: "Josefin Sans" sans-serif;
+  font-size: 40px;
+}
+
+.border {
+  border-bottom: 3px solid rgb(115, 115, 114);
+}
+
+#second-heading {
+  text-align: center;
+  font-family: "Arial", "Meiryo", sans-serif;
+}
+
+#child div {
+  font-weight: bold;
+}
+
+.text-black {
+  color: black;
+}
+.text-skyblue {
+  color: skyblue;
+}
+.text-pink {
+  color: rgb(255, 192, 203);
+}
+
