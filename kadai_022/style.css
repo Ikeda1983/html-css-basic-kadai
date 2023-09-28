@@ -1,78 +1,56 @@
+h1,
+p,
+body {
+  margin: 0;
+}
+
+p,
+a {
+  font-size: 20px;
+}
+
 header {
   margin-bottom: 20px;
   background-color: rgb(244, 79, 79);
   text-align: center;
 }
+
 h1 {
-  margin: 0px;
   color: rgb(255, 255, 255);
 }
 
-.flexbox-container {
-  display: flex;
+main {
   margin: 10px;
+}
+
+#parent {
+  display: flex;
   justify-content: space-around;
-}
-
-.flexbox-item {
-  justify-content: space-around;
-}
-
-@media screen and (max-width:768px) {
-  div {
-    display: block;
-  h2 {
-    font-size: 30px;
-  p {
-    font-size: 25px;
-  }
-}
-}
-}
-
-body {
-  margin: 0px;
 }
 
 .contents {
   padding: 10px 15px;
   margin: 20px 0px;
   text-align: center;
-  border: solid 3px color rgb(238, 204, 204);
+  flex-basis: 25%;
+  border: 3px solid rgb(238, 204, 204);
 }
 
-.h2 {
+h2 {
   font-size: 25px;
-  border-bottom: dotted 3px color rgb(236, 122, 122);
+  border-bottom: 3px dotted rgb(236, 122, 122);
 }
 
-.h2::before {
+h2::before {
   content: "●";
-  color: rgb(239, 111, 139) ;
+  color: rgb(239, 111, 139);
 }
 
-p {
-  font-size: 20px;
-}
 
-#parent p:nth-of-type(2) {
+
+.contents p:nth-of-type(2)::first-letter{
   font-weight: bold;
   color: rgb(97,206, 249);
-}
-
-#parent p:nth-of-type(4) {
-  font-weight: bold;
-  color: rgb(97,206, 249);
-}
-
-#parent p:nth-of-type(6) {
-  font-weight: bold;
-  color: rgb(97,206, 249);
-}
-
-p::first-letter{
-  font-weight: bold;
-  color:rgb(97,206, 249);
 }
 
 img {
@@ -80,71 +58,35 @@ img {
   width: 70%;
 }
 
-.item01 {
-  flex-basis: 25%;
-}
-
-.item02 {
-  flex-basis: 25%;
-}
-
-.item03 {
-  flex-basis: 25%;
-}
-
-.item04 {
-  flex-basis: 25%;
-}
-
-.item05 {
-  flex-basis: 25%;
-}
-
-.item06 {
-  flex-basis: 25%;
-}
-
-.item07 {
-  flex-basis: 25%;
-}
-
-.item08 {
-  flex-basis: 25%;
-}
-
-.item09 {
-  flex-basis: 25%;
-}
-
-.item10 {
-  flex-basis: 25%;
-}
-
-.item11 {
-  flex-basis: 25%;
-}
-
-.item12 {
-  flex-basis: 25%;
-}
-
 footer {
-    font-size: 20px;
-    background-color: rgb(244, 79, 79);
-    display: flex;
-    justify-content: center;
+  font-size: 20px;
+  background-color: rgb(244, 79, 79);
+  display: flex;
+  justify-content: center;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+
+a:visited {
+  color: rgb(193, 234, 251);
+}
+
+a:hover {
+  color: rgb(245, 178, 168);
+}
+
+@media screen and (max-width:768px) {
+  #parent {
+    display: block;
   }
 
-  a:link{
-    color: rgb(255, 255, 255);
+  h2 {
+    font-size: 30px;
   }
 
-  a:visited {
-    color: rgb(193, 234, 251);
+  p {
+    font-size: 25px;
   }
-
-  a:hover {
-    color: rgb(245, 178, 168);
-  }
-  
-  
+}
